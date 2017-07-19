@@ -61,3 +61,4 @@ typings/
 api/users/*
 
 .DS_Store
+node_modules
