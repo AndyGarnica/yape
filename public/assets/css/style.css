@@ -1,0 +1,30 @@
+/*Rojo - bullet : #f64552;
+Gris - bullet : #f8f8f8;
+Amarillo - botones : #fbd43b;
+Gris dark : #212121;
+Gris - letra soft : #8f8f8f;
+Turquesa - Términos y condiciones: #00c3a3;
+Morado - Entrada de números : #49233b;
+Morado light : #451e36;
+Morado dark : #38052a;*/
+
+.carousel-slider{
+  min-height:600px;
+}
+.tamano-img{
+  width:60% !important;
+  margin-top:20%;
+}
+.tno-title{
+  margin-top:5%;
+}
+
+.btn{
+  width:100%;
+}
+
+.img-form{
+  width:100%;
+  margin-left:30%;
+  margin-top:30%
+}

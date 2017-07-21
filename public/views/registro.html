@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Yape</title>
-    <link rel="stylesheet" href="./../static/materialize-css/dist/css/materialize.min.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>Yape</title>
+  <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
-    <div class="center marginInicio">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12">
-                    <img src="../assets/img/icons/phone.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m12">
-                    <h1>Para comenzar validemos tu número</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m12">
-                    <h4 class="grisSuave">Recibirás un SMS con un código de validación</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m12">
-                    <div class="row">
-                        <div class="ingresoCelular center">
-                           <form action="" id="registro-form">
-                            <h5>
-                                <i class="material-icons">phonelink_ring</i> <span class="grisSuave"> (+51)</span> <input type="number" class="inputRegistro"></h5></form>
-                        </div>
-                        <div class="row">
-                            <h5><input type="checkbox" id="checkBoxRegistro">Acepta los <span class="terminosYcondicionees"><a href="">Términos y condiciones</a></span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m12">
-                            <a  id="btn_registro" class="waves-effect btn btn_amarillo_registro 
-" disabled>CONTINUAR</a>
-                </div>
-            </div>
-        </div>
-    </div>
-     <script src="./../static/jquery/dist/jquery.min.js"></script>
-    <script src="./../static/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/app2.js"></script>
-</body>
 
+  <section class="container">
+
+    <div class="row center">
+      <img src="../assets/img/icons/phone.png" class="tamano-img">
+      <h4 class="center">
+        Para comenzar validaremos tu numero
+      </h4>
+      <h6>Recibiras un SMS con un numero de configuracion</h6>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <form>
+
+          <div class="input-field">
+            <div class="col s3">
+              <img src="../assets/img/icons/phoneandnumber.png" class="img-form">
+            </div>
+          </div>
+
+          <div class=" input-field col s7 offset-1">
+            <input id="icon_telephone" type="tel" class="validate" maxlength="10">
+            <label for="icon_telephone"></label>
+          </div>
+
+          <div class="row">
+            <p class="col s12 center">
+              <input type="checkbox" class="filled-in" id="checkBoxRegistro"/>
+              <label for="condicionesT">Acepto los<a href="#">Terminos y condiciones</a></label>
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-s1 col s10 contenedor-btn">
+        <button id='btn_registro' class="waves-effect waves-light btn btn-registro" disabled>Continuar</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="../static/jquery/dist/jquery.min.js"></script>
+  <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
 </html>

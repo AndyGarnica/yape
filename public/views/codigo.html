@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Código</title>
+    <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+
+  <body>
+    `<section class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <img src="../assets/img/icons/message.png" class="img_ValNum">
+          <h4><strong>Ahora ingresa tu código</strong></h4>
+        </div>
+        <div class="row">
+          <div class="col s12 center">
+            <h5 class="grisSuave">Enviamos un SMS con el código de validación al numero <strong id="numeroIngresado"></strong></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center">
+
+            <div class="ingresoCelular">
+              <form id="usuarioForm">
+                <div class="col s2">
+                  <img src="../assets/img/icons/lock.png">
+                </div>
+                <div class="input-field col s9 offset-s1">
+                  <input id="codigoValidacion" type="number" data-length="6" class="img-Form col s6" placeholder="    - - - - - - - - - - - - - - - ">
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="col s12 center">
+                <h5 class="grey-text">Reintentar en <img src="../assets/img/icons/clock.png"> 21</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../static/jquery/dist/jquery.min.js"></script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="../assets/js/codigo.js"></script>
+  </body>
+
+</html>
